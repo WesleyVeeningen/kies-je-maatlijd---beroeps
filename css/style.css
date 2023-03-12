@@ -13,9 +13,6 @@
 }
 
 body {
-    width: 79%;
-    left: 10.5%;
-    right: 10.5%;
     position: relative;
 }
 
@@ -49,5 +46,3 @@ i {
     right: 6%;
     font-size: 19%;
 }
-
-
