@@ -78,9 +78,20 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.menu-items a:hover {
-  color: var(--hover-color);
-  transition: color 0.3s ease-in-out;
+
+.menu-items li a {
+  --c:linear-gradient(#473126 0 0); /* update the color here */
+  
+  padding-bottom: .15em;
+  background: var(--c), var(--c);
+  background-size: .3em .1em;
+  background-position:50% 100%;
+  background-repeat: no-repeat;
+  transition: .3s linear, background-size .3s .2s linear;
+}
+.menu-items a:hover  {
+  background-size: 40% .1em;
+  background-position: 10% 100%, 90% 100%;
 }
 
 .logo {
@@ -89,7 +100,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 800px) {
     .navbar {
       opacity: 0.95;
     }
