@@ -31,6 +31,11 @@ height: 10vh;
     font-size:medium;
 }
 
+.fa-location-dot {
+    position: relative;
+    right: 2%;
+}
+
 #location-text {
     float: right;
     text-decoration: none;
@@ -55,7 +60,7 @@ nav {
 }
 
 nav > a {
-    padding: 21px 28px;
+    padding: 1.313em 1.750em;
     color: black;
     display: block;
     text-decoration: none;
@@ -68,3 +73,6 @@ nav > a:hover {
     background-color: rgb(114, 86, 49);
 }
 
+footer {
+    height: 4vh;
+}
