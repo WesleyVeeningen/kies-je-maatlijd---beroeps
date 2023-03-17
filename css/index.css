@@ -48,13 +48,13 @@ body {
   color: var(--heading-text);  
   text-transform: uppercase;
   opacity: 0.85;
-  height: 55px;
+  height: 60px;
   z-index: 12;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   height: 64px;
   align-items: center;
 }
@@ -95,12 +95,11 @@ body {
   background-position: 10% 100%, 90% 100%;
 }
 
-.logo {
-  order: 1;
-  font-size: 2.3rem;
+.logo img {
+  order: 1; 
   margin-bottom: 0.5rem;
+  height:  70px;
 }
-
 
 /*header */
 .showcase-area {
