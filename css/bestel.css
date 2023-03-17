@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(235,225,212);
+}
+
+#sect1 {
+    position: relative;
+    color: white;
+}
+
+#img-top {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    filter: shadow(10px);
+}
+
+#hoofd-tekst {
+    position: absolute;
+    top: 45%;
+    left: 44.5%;
+    font-size: 350%;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+#setc2 {
+    position: absolute;
+    margin-top: 10%;
+    width: 40%;
+    left: 5%;
+    right: 65%;
+}
+
+#menu-head-1 {
+    font-size: 300%;
+}
+
+.item {
+    color: black;
+    padding: 2% 2% 2% 2%;
+    border: lightgray solid 2px;
+    margin-bottom: 5%;
+    background: #f5f0f0;
+    border-radius: 20px;
+}
+
+.item-tekst {
+    position: relative;
+    top: 0.8rem;
+    font-weight: bold;
+}
+
+.item-tekst-nl {
+    font-size: 80%;
+    font-weight: normal;
+}
+
+
+.item-price {
+    text-align: right;
+    position: relative;
+    bottom: 1.4rem;
+    font-size: 100%;
+}
+
