@@ -18,9 +18,10 @@ body {
 
 #hoofd-tekst {
     position: relative;
-    top: 45%;
-    left: 44.5%;
-    font-size: 350%;
+    top: 27rem;
+    left: 43%;
+    right: 50%;
+    font-size: 600%;
     filter: drop-shadow(2px 2px 2px black);
 }
 
