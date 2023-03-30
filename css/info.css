@@ -102,8 +102,19 @@ hr {
   border: none;
   bottom: 0;
   right: 0;
-  margin: 0% 1% 0% 0%;
   cursor: pointer;
+  animation-delay: 5s;
+  animation: slide-in 1.5s forwards;
+   
+}
+
+@keyframes slide-in {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 20px;
+  }
 }
 
 .popup {
