@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,104 +9,176 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="css/bestel.css">
     <title>Gordon Ramsay Bar & Grill</title>
 </head>
+
 <body>
     <header>
         <script>
-            $(function(){
+            $(function () {
                 $("header").load("navbar.html");
             });
         </script>
     </header>
-</body>
-    <section id="sect1">
-    <h1 id="hoofd-tekst">Bestel</h1>
 
-    <img src="img/img-top.png" id="img-top">
+    <section class="sect1">
+        <h1 class="hoofd-tekst">Bestel</h1>
+
+        <img src="img/img-top.png" class="img-top">
     </section>
-        <section id="setc2">
+    <section class="setc2">
+            <div id="winkelwagen-all">
+                <div id="winkelwagen" name="items">
+
+                </div>
+                <div id="totaal-btn">
+                    <a href="bedankt.html"><button id="btn-bestel">afrekenen</button></a>
+                    <div id="totaal-prijs" name="totaal-prijs">
+
+                    </div>
+
+                </div>
+            </div>
         <div class="menu-1">
-            <h1 id="menu-head-1">SNACKS TO SHARE</h1>
-            <br>
-            <br>
-            <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                        <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-            </p>
-                        <div class="item-price"><p>6.5</p></div>
+
+            <div class="item">
+                <p class="item-tekst" id="item-tekst-1">Sourdough bread, salted butter <br>
+                </p>
+                <img src="img/plus.png" onclick="aanklik(0)" class="plus">
+                <img src="img/min.png" class="min" onclick="verwijderen(0)">
+                <div class="item-price">
+                    <p>6.5</p>
+                </div>
             </div>
-            <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-            </p>
-                <div class="item-price"><p>6.5</p></div>
+            <div class="item">
+                <p class="item-tekst" id="item-tekst-2">2 <br>
+
+                </p>
+                <img src="img/plus.png" onclick="aanklik(1)" class="plus">
+                <img src="img/min.png" class="min" onclick="verwijderen(1)">
+                <div class="item-price">
+                    <p>6.5</p>
+                </div>
             </div>
-            <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-            </p>
-                <div class="item-price"><p>6.5</p></div>
+            <div class="item">
+                <p class="item-tekst" id="item-tekst-3">3 <br>
+
+                </p>
+                <img src="img/plus.png" onclick="aanklik(2)" class="plus">
+                <img src="img/min.png" class="min" onclick="verwijderen(2)">
+                <div class="item-price">
+                    <p>6.5</p>
+                </div>
             </div>
-            <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-            </p>
-                <div class="item-price"><p>6.5</p></div>
+            <div class="item">
+                <p class="item-tekst" id="item-tekst-4">4 <br>
+
+                </p>
+                <img src="img/plus.png" onclick="aanklik(3)" class="plus">
+                <img src="img/min.png" class="min" onclick="verwijderen(3)">
+                <div class="item-price">
+                    <p>6.5</p>
+                </div>
             </div>
-            <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-            </p>
-                <div class="item-price"><p>6.5</p></div>
+            <div class="item">
+                <p class="item-tekst" id="item-tekst-5">5 <br>
+
+                </p>
+                <img src="img/plus.png" onclick="aanklik(4)" class="plus">
+                <img src="img/min.png" class="min" onclick="verwijderen(4)">
+                <div class="item-price">
+                    <p>6.5</p>
+                </div>
             </div>
-            <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-            </p>
-                <div class="item-price"><p>6.5</p></div>
+            <div class="item">
+                <p class="item-tekst" id="item-tekst-6">6 <br>
+
+                </p>
+                <img src="img/plus.png" onclick="aanklik(5)" class="plus">
+                <img src="img/min.png" class="min" onclick="verwijderen(5)">
+                <div class="item-price">
+                    <p>6.5</p>
+                </div>
             </div>
         </div>
-            <div class="menu-2">
-                <h1 id="menu-head-2">SNACKS TO SHARE</h1>
-                <br>
-                <br>
-                <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                    <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-                </p>
-                    <div class="item-price"><p>€ 6,50</p></div>
-                </div>
-                <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                    <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-                </p>
-                    <div class="item-price"><p>€ 6,50</p></div>
-                </div>
-                <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                    <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-                </p>
-                    <div class="item-price"><p>€6,50</p></div>
-                </div>
-                <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                    <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-                </p>
-                    <div class="item-price"><p>€6,50</p></div>
-                </div>
-                <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                    <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-                </p>
-                    <div class="item-price"><p>6,50</p></div>
-                </div>
-                <div class="item"><p class="item-tekst">Sourdough bread, salted butter <br>
-                    <span class="item-tekst-nl">(Zuurdesembrood, gezout botter)</span>
-                </p>
-                    <div class="item-price"><p>6,50</p></div>
-                </div>
+
+
+        <div class="item">
+            <p class="item-tekst" id="item-tekst-7">7 <br>
+
+            </p>
+            <img src="img/plus.png" onclick="aanklik(6)" class="plus">
+            <img src="img/min.png" class="min" onclick="verwijderen(6)">
+            <div class="item-price">
+                <p>€ 6,50</p>
             </div>
+        </div>
+        <div class="item">
+            <p class="item-tekst" id="item-tekst-8">8 <br>
+
+            </p>
+            <img src="img/plus.png" onclick="aanklik(7)" class="plus">
+            <img src="img/min.png" class="min" onclick="verwijderen(7)">
+            <div class="item-price">
+                <p>€ 6,50</p>
             </div>
-        </section>
+        </div>
+        <div class="item">
+            <p class="item-tekst" id="item-tekst-9">9 <br>
+
+            </p>
+            <img src="img/plus.png" onclick="aanklik(8)" class="plus">
+            <img src="img/min.png" class="min" onclick="verwijderen(8)">
+            <div class="item-price">
+                <p>€6,50</p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="item-tekst" id="item-tekst-10">10 <br>
+
+            </p>
+            <img src="img/plus.png" onclick="aanklik(9)" class="plus">
+            <img src="img/min.png" class="min" onclick="verwijderen(9)">
+            <div class="item-price">
+                <p>€6,50</p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="item-tekst" id="item-tekst-11">11 <br>
+
+            </p>
+            <img src="img/plus.png" onclick="aanklik(10)" class="plus">
+            <img src="img/min.png" class="min" onclick="verwijderen(10)">
+            <div class="item-price">
+                <p>6,50</p>
+            </div>
+        </div>
+        <div class="item">
+            <p class="item-tekst" id="item-tekst-12">12 <br>
+
+            </p>
+            <img src="img/plus.png" onclick="aanklik(11)" class="plus">
+            <img src="img/min.png" class="min" onclick="verwijderen(11)">
+            <div class="item-price">
+                <p>6,50</p>
+            </div>
+        </div>
+        </div>
+    </section>
     <footer>
         <script>
-            $(function(){
+            $(function () {
                 $("footer").load("footer.html");
             });
         </script>
     </footer>
+
+    <script src="js/bestel.js   "></script>
 </body>
+
 </html>
