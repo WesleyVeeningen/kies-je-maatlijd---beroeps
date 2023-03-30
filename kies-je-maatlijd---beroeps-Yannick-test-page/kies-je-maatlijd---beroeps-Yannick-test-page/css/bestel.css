@@ -1,0 +1,191 @@
+/* default styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+    font-family: font;
+    src: url(/content/Gill-Sans-WGL.ttf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: font;
+}
+
+.sect1 {
+    position: relative;
+    color: white;
+    top: 0%; 
+}
+
+.img-top {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index: 1; /* set a higher z-index value */
+    filter: shadow(10px);
+}
+
+#winkelwagen {
+    font-size: 1.2rem;
+}
+
+
+#winkelwagen-all {
+    border: 1px solid black;
+    height: fit-content;
+    min-height: 5rem;
+    position: absolute;
+    top: 3rem;
+    margin-left: 70rem;
+    width: 30rem;
+    background: rgb(235,225,212);
+    
+}
+
+#btn-bestel {
+    padding: 1rem 4rem;
+    background: rgb(141, 97, 61);
+    border: black 1px solid;
+    color: white;
+    position: relative;
+    font-size: 130%;
+}
+
+#btn-bestel:hover {
+    background: rgb(110, 76, 49);
+}
+
+#totaal-prijs {
+    position: relative;  
+    margin-top: 10rem;
+    left: 1rem;
+    font-size: 130%;
+          
+}
+
+#totaal-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.plus {
+    width: 3%;
+    position: relative;
+    float: right;
+    bottom: 2.2rem;
+}
+
+.min {
+    width: 3%;
+    position: relative;
+    float: right;
+    left: 1.7rem;
+    top: 0.5rem;
+}
+
+.hoofd-tekst {
+    position: relative;
+    top: 25rem;
+    left: 44.5%;
+    font-size: 5rem;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.setc2 {
+    position: relative;
+    margin-top: 45rem; /* add a margin-top value */
+    width: 40%;
+    left: 5%;
+    right: 65%;
+}
+
+.menu-head-1 {
+    font-size: 300%;
+}
+
+#hoofd-tekst {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.item {
+    color: black;
+    padding: 2% 2% 2% 2%;
+    border: lightgray solid 2px;
+    margin-bottom: 5%;
+    background: rgb(235,225,212);
+    border-radius: 20px;
+}
+
+.item-tekst {
+    position: relative;
+    top: 0.8rem;
+    font-weight: bold;
+}
+
+.item-tekst-nl {
+    font-size: 80%;
+    font-weight: normal;
+}
+
+.item-price {
+    text-align: right;
+    position: relative;
+    bottom: 1.4rem;
+    font-size: 100%;
+}
+
+/* media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    /* styles for devices with a maximum width of 768px */
+    .hoofd-tekst {
+        font-size: 3rem;
+        left: 35%;
+        top: 9rem;
+    }
+    
+    .setc2 {
+        width: 80%;
+        left: 10%;
+        right: auto;
+    }
+    
+    #winkelwagen-all {
+        display: none;
+    }
+
+}
+
+#bedankt-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 25rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#bedankt-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+}
