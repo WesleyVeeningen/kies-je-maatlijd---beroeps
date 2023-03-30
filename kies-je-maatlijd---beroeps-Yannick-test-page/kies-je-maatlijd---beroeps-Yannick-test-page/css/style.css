@@ -1,0 +1,49 @@
+@font-face {
+    font-family: font;
+    src: url(/content/Gill-Sans-WGL.ttf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: font;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+header {
+background: rgb(235,225,212);
+height: 10vh;
+
+}
+
+#logo-header {
+    width: 24%;
+    height: 10vh;
+}
+
+.location {
+    float: right;
+    margin-top: 2%;
+    position: relative;
+    right: 1%;
+    padding-right: 1%;
+}
+
+#location-text {
+    float: right;
+    text-decoration: none;
+    color: #5f5348;
+}
+
+i {
+    color:#5f5348;
+    position: relative;
+    right: 6%;
+    font-size: 19%;
+}
