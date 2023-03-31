@@ -14,7 +14,7 @@ body {
 .photo-container-image {
   position: absolute;
   top: 0;
-  margin-top: -5%;
+  margin-top: -10%;
   width: 100%;
 }
 
@@ -44,7 +44,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f4eadf;
-  padding: 5% 0;
+  padding-bottom: 2%;
 }
 
 .content-info-text {
@@ -101,9 +101,19 @@ hr {
   padding: 1%;
   border: none;
   bottom: 0;
-  right: 0;
-  margin: 0% 1% 0% 0%;
+  right: 0%;
   cursor: pointer;
+  animation-delay: 5s;
+  animation: slide-in 1.5s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 20px;
+  }
 }
 
 .popup {
@@ -117,10 +127,11 @@ hr {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
-textarea{
+textarea {
   width: 140px;
 }
-input, textarea {
+input,
+textarea {
   background-color: #e6dfd8;
 }
 .popup-content {
@@ -150,9 +161,14 @@ input, textarea {
 @media only screen and (max-width: 768px) {
   .content-info-text {
     margin-right: 20%;
-    margin-top: -20%;
+    margin-top: -10%;
   }
-
+  .photo-container-image {
+    margin-top: 0;
+  }
+  .over-ons-titel {
+    top: 65%;
+  }
   .info-text-image {
     position: relative;
     width: 80%;
