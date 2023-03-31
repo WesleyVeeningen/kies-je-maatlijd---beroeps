@@ -53,6 +53,6 @@
   }
   
   .food-description .food-price {
-    color: #117964;
+    color: var(--heading-text);
     font-weight: 700;
   }
