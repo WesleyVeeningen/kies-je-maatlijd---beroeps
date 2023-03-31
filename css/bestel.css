@@ -87,7 +87,7 @@ body {
     margin-top: 10rem;
     left: 1rem;
     font-size: 130%;
-          
+    display: block;
 }
 
 #totaal-btn {
