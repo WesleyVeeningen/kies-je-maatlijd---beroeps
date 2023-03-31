@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-$query = 'SELECT * FROM  verprog1_agenda';
+$query = 'SELECT * FROM  booking';
 
 $result = mysqli_query($mysqli, $query);
 
@@ -11,10 +11,10 @@ if (mysqli_num_rows($result) > 0) { ?>
 
     <table border="1px" bgcolor="#add8e6">
         <tr>
-            <th>ID</th>
-            <th>Onderwerp</th>
-            <th>Inhoud</th>
-            <th>Begindatum</th>
+            <th>Naam</th>
+            <th>DAtum</th>
+            <th>Tijd</th>
+            <th>Personen</th>
 
         </tr>
         <?php
@@ -29,12 +29,12 @@ if (mysqli_num_rows($result) > 0) { ?>
 
                 <td><?= $item['Personen']; ?></td>
 
-                <td><a href='verwijder.php?id=<?= $item['ID']?>'>verwijder</a></td>
-                <td><a href='pasaan.php?id=<?= $item['ID']?>'>pas aan</a></td>
+                <td><a href='verwijder.php?Naam=<?= $item['Naam']?>'>verwijder</a></td>
             </tr>
 
         <?php  }  ?>
 
-    </table>
+    </table>hey
 
+        <a href="toevoegForm.php">Book tafel</a>
 <?php }
