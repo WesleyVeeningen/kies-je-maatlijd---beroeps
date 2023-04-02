@@ -3,10 +3,10 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$db_hostname = 'localhost';
-$db_username = 'D1E1';
-$db_password = '17yhOb6&1';
-$db_database = 'bestelpagina';
+$db_hostname = 'hostname';
+$db_username = 'user';
+$db_password = 'wachtwoord';
+$db_database = 'database';
 
 $mysqli = mysqli_connect($db_hostname, $db_username,$db_password, $db_database);
 
